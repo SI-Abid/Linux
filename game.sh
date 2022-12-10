@@ -3,7 +3,7 @@
 read -p "Enter your name: " name
 num=$(((RANDOM % 100) + 1))
 counter=0
-prompt="Guess the number: "
+prompt="Guess the number between 1 and 100: "
 while true; do
     read -p "$prompt" guess
     if [[ $guess -eq $num ]]; then
